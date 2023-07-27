@@ -21,7 +21,6 @@
 }
 
 .footer-text {
-  margin-bottom: 72px;
   max-width: 268px;
   font-size: 16px;
   font-weight: 400;
@@ -31,7 +30,7 @@
 }
 .footer-socials-text {
   margin-bottom: 16px;
-
+  text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -42,7 +41,6 @@
 .footer-socials-menu {
   display: flex;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .footer-socials-item {
@@ -72,6 +70,7 @@
 
 .subscribe-form-title {
   margin-bottom: 16px;
+  align-items: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -81,7 +80,7 @@
 
 .subscribe-form-input {
   padding: 8px 16px;
-  width: 264px;
+  width: 398px;
   height: 40px;
   font-size: 12px;
   line-height: 1.5;
@@ -117,13 +116,36 @@
   letter-spacing: 0.64px;
   color: var(--white-color);
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscribe-icon {
   margin-left: 16px;
 }
 
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+
 @media screen and (min-width: 768px) {
+  .centered {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+  }
+  .subscribe-form-input {
+    width: 264px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -134,7 +156,9 @@
 
   .centered {
     display: flex;
-    align-items: baseline;
+    flex-direction: row;
+    gap: 0;
+    flex-wrap: nowrap;
   }
   .footer-wrapper-left {
     margin-right: 120px;
@@ -146,6 +170,18 @@
 
   .footer-text {
     margin-bottom: 0;
+  }
+
+  .footer-socials-menu {
+    margin-bottom: 0;
+  }
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+  }
+
+  .subscribe-form-input {
+    width: 264px;
   }
 }
 
