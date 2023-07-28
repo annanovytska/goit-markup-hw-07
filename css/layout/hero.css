@@ -1,4 +1,5 @@
 .hero {
+  margin: 0 auto;
   padding-top: 112px;
   padding-bottom: 112px;
   background-color: var(--navyblue-color-titles);
