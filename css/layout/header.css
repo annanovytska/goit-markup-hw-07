@@ -20,7 +20,7 @@
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-right: 76px;
+  /* margin-right: 76px; */
 
   font-size: 18px;
   font-family: Raleway, sans-serif;
@@ -65,6 +65,7 @@
   .header-nav-menu {
     display: flex;
     column-gap: 40px;
+    margin: 0 auto;
   }
 
   .nav-link {
