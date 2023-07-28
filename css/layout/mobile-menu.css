@@ -72,8 +72,9 @@
   color: var(--slate-color-text);
 }
 
-.footer-socials-menu {
-  justify-content: space-around;
+.mobile-socials-menu {
+  display: flex;
+  justify-content: space-between;
 }
 
 .accent {
