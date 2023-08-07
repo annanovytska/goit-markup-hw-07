@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -53,6 +53,16 @@
             </li>
           </ul>
         </address>
+        <button
+          class="burger-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-icon" width="30" height="19">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -83,6 +93,7 @@
               <a class="portfolio-card-link link" href="">
                 <div class="overlay-container">
                   <img
+                    class="portfolio-card-img"
                     src="./images/portfolio/one.jpg"
                     alt="App"
                     width="360"
@@ -104,6 +115,7 @@
               <a class="portfolio-card-link link" href="">
                 <div class="overlay-container">
                   <img
+                    class="portfolio-card-img"
                     src="./images/portfolio/two.jpg"
                     alt="Marketing"
                     width="360"
@@ -125,6 +137,7 @@
               <a class="portfolio-card-link link" href="">
                 <div class="overlay-container">
                   <img
+                    class="portfolio-card-img"
                     src="./images/portfolio/three.jpg"
                     alt="App"
                     width="360"
@@ -146,6 +159,7 @@
               <a class="portfolio-card-link link" href="">
                 <div class="overlay-container">
                   <img
+                    class="portfolio-card-img"
                     src="./images/portfolio/four.jpg"
                     alt="Marketing"
                     width="360"
@@ -167,6 +181,7 @@
               <a class="portfolio-card-link link" href="">
                 <div class="overlay-container">
                   <img
+                    class="portfolio-card-img"
                     src="./images/portfolio/five.jpg"
                     alt="Design"
                     width="360"
@@ -188,6 +203,7 @@
               <a class="portfolio-card-link link" href="">
                 <div class="overlay-container">
                   <img
+                    class="portfolio-card-img"
                     src="./images/portfolio/six.jpg"
                     alt="Marketing"
                     width="360"
@@ -209,6 +225,7 @@
               <a class="portfolio-card-link link" href="">
                 <div class="overlay-container">
                   <img
+                    class="portfolio-card-img"
                     src="./images/portfolio/seven.jpg"
                     alt="Design"
                     width="360"
@@ -230,6 +247,7 @@
               <a class="portfolio-card-link link" href="">
                 <div class="overlay-container">
                   <img
+                    class="portfolio-card-img"
                     src="./images/portfolio/eight.jpg"
                     alt="Web Site"
                     width="360"
@@ -251,6 +269,7 @@
               <a class="portfolio-card-link link" href="">
                 <div class="overlay-container">
                   <img
+                    class="portfolio-card-img"
                     src="./images/portfolio/nine.jpg"
                     alt="Web Site"
                     width="360"
@@ -340,5 +359,81 @@
         </div>
       </div>
     </footer>
+
+    <div class="mobile-menu js-menu-container">
+      <button class="modal-close-btn js-close-menu" type="button">
+        <svg width="8" height="8">
+          <use href="./images/icons.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="list">
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link link" href="./index.html">Studio</a>
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link accent link" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="mobile-menu-address">
+        <ul class="list">
+          <li>
+            <a class="mobile-menu-tel link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu-email link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="mobile-socials-menu list">
+        <li class="footer-socials-item">
+          <a class="footer-socials-link" href="">
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a class="footer-socials-link" href="">
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a class="footer-socials-link" href="">
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a class="footer-socials-link" href="">
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
